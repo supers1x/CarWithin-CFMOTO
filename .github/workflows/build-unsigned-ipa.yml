@@ -1,0 +1,60 @@
+name: Build unsigned IPA
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-15-intel
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply CFMOTO patch
+        run: |
+          set -e
+          if git apply --check --exclude='.github/workflows/*' cfmoto.patch 2>/dev/null; then
+            git apply --exclude='.github/workflows/*' cfmoto.patch
+            git config user.name "CarWithin builder"
+            git config user.email "builder@users.noreply.github.com"
+            git add -A
+            git commit -m "Apply CFMOTO patch [skip ci]"
+            git push || echo "push skipped"
+          else
+            echo "patch already applied or context mismatch; continue"
+          fi
+
+      - name: Build
+        run: |
+          set +e
+          xcodebuild -project TDSCarKit.xcodeproj -scheme TDSCarKit -configuration Release \
+            -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" build 2>&1 | tee build.log
+          status=${PIPESTATUS[0]}
+          if [ "$status" -ne 0 ]; then
+            cp build.log ci-build-log.txt
+            git config user.name "CarWithin builder"
+            git config user.email "builder@users.noreply.github.com"
+            git add -f ci-build-log.txt
+            git commit -m "CI build log [skip ci]" || true
+            git push || true
+          fi
+          exit $status
+
+      - name: Package IPA
+        run: |
+          APP=build/Build/Products/Release-iphoneos/TDSCarKit.app
+          test -d "$APP"
+          mkdir -p Payload
+          cp -R "$APP" Payload/
+          zip -qry CarWithin-unsigned.ipa Payload
+          ls -lh CarWithin-unsigned.ipa
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CarWithin-unsigned-ipa
+          path: CarWithin-unsigned.ipa
