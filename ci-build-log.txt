@@ -1,0 +1,172 @@
+Command line invocation:
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild -project TDSCarKit.xcodeproj -scheme TDSCarKit -configuration Release -sdk iphoneos -destination generic/platform=iOS -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= build
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = 
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos18.5
+
+note: Using codesigning identity override: 
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'TDSCarKit' in project 'TDSCarKit' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 28203f491000609f95c27c09fb230623
+Build description path: /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/XCBuildData/28203f491000609f95c27c09fb230623.xcbuilddata
+ClangStatCache /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/TDSCarKit.xcodeproj
+    /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -o /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache
+
+CreateBuildDirectory /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/TDSCarKit.xcodeproj
+    builtin-create-build-directory /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products
+
+CreateBuildDirectory /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/TDSCarKit.xcodeproj
+    builtin-create-build-directory /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/TDSCarKit.xcodeproj
+    builtin-create-build-directory /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit-a820119691a99b97ca6e3178b25dbb34-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/TDSCarKit.xcodeproj
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit-a820119691a99b97ca6e3178b25dbb34-VFS-iphoneos/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/TDSCarKit.xcodeproj
+    builtin-create-build-directory /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit.hmap (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit.hmap
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit.DependencyStaticMetadataFileList (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit.DependencyMetadataFileList (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-project-headers.hmap (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-own-target-headers.hmap (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-generated-files.hmap (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-all-target-headers.hmap (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-all-non-framework-target-headers.hmap (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+-target arm64-apple-ios16.0 -fobjc-arc -fmodules -gmodules '-fmodules-cache-path=/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/ModuleCache.noindex' -fpascal-strings -Os '-DOBJC_OLD_DISPATCH_PROTOTYPES=1' -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -g '-fvisibility=hidden' -iquote /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-generated-files.hmap -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-own-target-headers.hmap -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-all-target-headers.hmap -iquote /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-project-headers.hmap -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/include -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/Sources/CTDSCarKitCrypto/include -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources-normal/arm64 -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources/arm64 -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources -F/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit_const_extract_protocols.json (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit.SwiftFileList (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit.SwiftConstValuesFileList (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit.LinkFileList (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit-OutputFileMap.json (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/TDSCarKit-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    write-file /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+-target arm64-apple-ios16.0 -fmodules -gmodules '-fmodules-cache-path=/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/ModuleCache.noindex' -fpascal-strings -Os -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -g '-fvisibility=hidden' -iquote /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-generated-files.hmap -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-own-target-headers.hmap -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-all-target-headers.hmap -iquote /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/TDSCarKit-project-headers.hmap -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/include -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/Sources/CTDSCarKitCrypto/include -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources-normal/arm64 -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources/arm64 -I/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources -F/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos
+
+MkDir /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    /bin/mkdir -p /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app
+
+MkDir /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/assetcatalog_output/unthinned (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    /bin/mkdir -p /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/assetcatalog_output/unthinned
+
+MkDir /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/assetcatalog_output/thinned (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    /bin/mkdir -p /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/assetcatalog_output/thinned
+
+CpResource /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app/private.x963 /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/private.x963 (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/private.x963 /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app
+error: lstat(/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/private.x963): No such file or directory (2) (in target 'TDSCarKit' from project 'TDSCarKit')
+
+GenerateAssetSymbols /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/Assets.xcassets (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/Assets.xcassets --compile /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/assetcatalog_dependencies --output-partial-info-plist /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/assetcatalog_generated_info.plist --app-icon AppIcon --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 16.0 --platform iphoneos --bundle-identifier com.hanlinzhou.SameDeviceCarPlayPoC --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Intermediates.noindex/TDSCarKit.build/Release-iphoneos/TDSCarKit.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+
+CpResource /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app/leaf.cer /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/leaf.cer (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/leaf.cer /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app
+error: lstat(/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/leaf.cer): No such file or directory (2) (in target 'TDSCarKit' from project 'TDSCarKit')
+
+CpResource /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app/certificate.p7b /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/certificate.p7b (in target 'TDSCarKit' from project 'TDSCarKit')
+    cd /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/certificate.p7b /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app
+error: lstat(/Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/certificate.p7b): No such file or directory (2) (in target 'TDSCarKit' from project 'TDSCarKit')
+
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'TDSCarKit' from project 'TDSCarKit')
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CpResource /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app/private.x963 /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/private.x963 (in target 'TDSCarKit' from project 'TDSCarKit')
+	CpResource /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app/leaf.cer /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/leaf.cer (in target 'TDSCarKit' from project 'TDSCarKit')
+	CpResource /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/build/Build/Products/Release-iphoneos/TDSCarKit.app/certificate.p7b /Users/runner/work/CarWithin-CFMOTO/CarWithin-CFMOTO/App/BundledIdentity/certificate.p7b (in target 'TDSCarKit' from project 'TDSCarKit')
+	Building project TDSCarKit with scheme TDSCarKit and configuration Release
+(4 failures)
